@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Yone</title>
     <!-- css de bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <!-- css -->
-     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- estilos css sass -->
+     <link rel="stylesheet" href="./css/estilos.css">
+    
 </head>
+
 <body>
     <header>
         <div>
             <nav class="barra-navegacíon">
-             <!--Logo de la pagina -->
-             <img class="logo" src="./multimedia/logo.jpg" alt="logo-de-la-pagina">
+                <!--Logo de la pagina -->
+                <img class="logo" src="./multimedia/logo.jpg" alt="logo-de-la-pagina">
+            </nav>
         </div>
         <nav>
             <!-- Barra de navegación -->
-            <ul class="barra-de-navegación">
-              <a class="w-50 p-3" href="./index.html"> Home </a>
-              <a class="w-50 p-3" href="./medios/build.html"> Buils </a>
-              <a class="w-50 p-3" href="./medios/runas.html"> Runas </a>
-              <a class="w-100 p-3" href="./medios/fesa-de-linea.html"> Fase de Lineas </a>
-              <a class="w-50 p-3" href="./medios/fuerte-debil.html"> Fuerte/debil </a>
-            </ul>
-          </nav>
+            <div class="barra-de-navegación d-flex align-items-center">
+                <button> <a class=" linkB w-50 p-3" href="./index.html"> Home </a> </button>
+                <button> <a class=" linkB w-50 p-3" href="./medios/build.html"> Builts </a> </button>
+                <button> <a class=" linkB w-50 p-3" href="./medios/runas.html"> Runas </a> </button>
+                <button> <a class=" linkB w-100 p-3" href="./medios/fase-de-linea.html"> Fase de Lineas </a> </button>
+                <button> <a class=" linkB w-50 p-3" href="./medios/fuerte-debil.html"> Fuerte/debil </a> </button>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="contenedor-grid">
             <h1 class="grid-titulo-1 text-center">Guía de Yone</h1>
-            <p class="grid-texto-1 text-center">con esta guía podras aprender algunas mecanicas con Yone para mejorar</p>
+            <p class="grid-texto-1 text-center">con esta guía podras aprender algunas mecanicas con Yone para mejorar
+            </p>
             <img class="grid-logo-1" src="./multimedia/LoL-Symbol.png" alt="logo de lol">
-            <h2 class="grid-titulo-2 text-center">Esta pagina esta enfocada para todos los interesados en aprender algunos tips o aprender a jugar Yone</h2>
-            <p class="grid-texto-2 text-center">podras aprender cuales son las <a href="./medios/runas.html">runas</a> para jugar tanto en la linea top y mid, también podras aprender a usar las <a href="./medios/build.html">builds</a>
-                correspondientes para cada tipo de juego, también aprenderás a como estar en <a href="./medios/fesa-de-linea.html">fase de linea</a> y cuales son los <a href="./medios/fuerte-debil.html">counters y no counters</a> de yone</p>
+            <h2 class="grid-titulo-2 text-center">Esta pagina esta enfocada para todos los interesados en aprender
+                algunos tips o aprender a jugar Yone</h2>
+            <p class="grid-texto-2 text-center">podras aprender cuales son las <a href="./medios/runas.html">runas</a>
+                para jugar tanto en la linea top y mid, también podras aprender a usar las <a
+                    href="./medios/build.html">builds</a>
+                correspondientes para cada tipo de juego, también aprenderás a como estar en <a
+                    href="./medios/fesa-de-linea.html">fase de linea</a> y cuales son los <a
+                    href="./medios/fuerte-debil.html">counters y no counters</a> de yone</p>
             <img class="grid-logo-2" src="./multimedia/Yone.jpg" alt="yone">
         </section>
     </main>
-        <!-- Pie cierre pagina -->
+    <!-- Pie cierre pagina -->
     <footer class="pie-cierre">
-            <section>
-                <h2>Siguenes en nuestras redes</h2>
-                <!-- redes -->
-                  <div>
-                     <a class="redes-sociales-faceboock" href="https://www.facebook.com/">
-                         <img src="./multimedia/faceboock_logo.png" alt="">
-                     </a>
-                  </div>
-                  <div>
-                     <a class="redes-sociales-youtube" href="https://www.youtube.com/">
-                         <img src="./multimedia/Youtube_logo2.png" alt="">
-                     </a>
-                  </div>
-            </section>
-    </footer> 
+        <section>
+            <h2>Siguenes en nuestras redes</h2>
+            <!-- redes -->
+            <div>
+                <a class="redes-sociales-faceboock" href="https://www.facebook.com/">
+                    <img src="./multimedia/faceboock_logo.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a class="redes-sociales-youtube" href="https://www.youtube.com/">
+                    <img src="./multimedia/Youtube_logo2.png" alt="">
+                </a>
+            </div>
+        </section>
+    </footer>
     <!-- js de bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-</body>       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

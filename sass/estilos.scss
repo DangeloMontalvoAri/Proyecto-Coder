@@ -1,5 +1,5 @@
 /* reset del css */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,38 +10,38 @@
 /* font family "Poppins", sans-serif; */
 
 /* html */
-html{
+html {
     font-size: 62.5%;
 }
 
 /* Color de la pagina */
- body{
+body {
     background-color: #151719;
- }
+}
 
- /* titulos */
+/* titulos */
 
- h1{
+h1 {
     color: white;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-size: 4rem;
     font-style: italic;
 
- }
+}
 
 
- h2{
+h2 {
     color: white;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-size: 2.5rem;
     font-style: italic;
- }
+}
 
 /* letras */
 
-p{
+p {
     color: white;
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
@@ -49,46 +49,78 @@ p{
     text-transform: capitalize;
 }
 
-.presentacion a {
+/* links */
+a{
     color: white;
-}
-
-
-/* Barra de navegación */
-.barra-de-navegación a{
-    color: white;
+    font-size: 0.8rem;
     font-family: "Poppins", sans-serif;
     font-style: italic;
-    font-size: 2rem;
-    text-decoration: none;
-    margin: 0.3em;
+    text-transform: capitalize;
+}
+
+/* Barra de navegación */
+.barra-de-navegación {
+    button{
+        border: 0;
+        background-image: linear-gradient(150deg,
+        #153e48 );
+        border-radius: 8px;
+        color: #fff;
+        display: flex;
+        padding: 4px;
+        cursor: pointer;
+        transition: .3s;
+
+        .linkB {
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-style: italic;
+            font-size: 2rem;
+            text-decoration: none;
+            margin: 0.5em;
+            background-color: #151719;
+            padding: 16px 30px;
+            border-radius: 6px;
+            transition: .3s;
+        }
+
+    }
+    button:hover .linkB{
+        background: none;
+    }
+    button:active{
+        transform: scale(0.9);
+    }
+
 }
 
 /* logo */
-.logo{
+.logo {
     width: 100px;
     display: flex;
 }
 
 /* redes sociales (pie de pagina) */
-.redes-sociales-youtube img{
-    height: 45px;
-    margin-top: 0;
+.pie-cierre {
+    .redes-sociales-youtube img {
+        height: 45px;
+        margin-top: 0;
+    }
+
+    .redes-sociales-faceboock img {
+        height: 75px;
+    }
 }
 
-.redes-sociales-faceboock img{
-    height: 75px;
-}
 /* medidas de la pagina */
 header{
     background-color: #153448;
     flex-direction: row;
     display: flex;
-}
 
-.grid-logo-1{
-    width: 50rem;
-;
+    .barra-de-navegación{
+        display: flex;
+    }
 }
 
 /*grid*/
@@ -108,6 +140,10 @@ header{
     grid-template-columns: 25% 40% 25% ;
 
     grid-template-rows: 150x 150px 150px 150px 150px 150px;
+
+    .grid-logo-1{
+        width: 50rem;
+    }
 }
 
 .grid-titulo-1{
@@ -340,6 +376,14 @@ header{
 @media (max-width:500px){
     header{
         flex-direction: column;
+        .barra-de-navegación{
+         width: 12rem;
+         justify-content: start;
+         flex-direction: row;
+         .linkB{
+            font-size: 1em;
+         }
+        }
     }
 
     footer{
@@ -368,25 +412,33 @@ header{
         "texto2"
         "logo2";
 
-        grid-template-columns: 1fr ;
+        grid-template-columns: 100% ;
 
-        grid-template-rows: 450x 450px 450px 450px 450px 450px;
-    }
+        grid-template-rows: 450x 450px 450px 450px 450px 50px;
 
-    p{
-        font-size: 1rem;
-    }
+        .grid-logo-1{
+            width: 20rem;
+        }
 
-    h1{
-        font-size: 1.5rem;
-    }
+        .grid-logo-2{
+            width: 20rem;
+        }
 
-    h2{
-        font-size: 1.5rem;
-    }
-
-    .grid-texto-2 a{
-        font-size: 1rem;
+        p{
+            font-size: 1rem;
+        }
+    
+        h1{
+            font-size: 1.5rem;
+        }
+    
+        h2{
+            font-size: 1.5rem;
+        }
+    
+        .grid-texto-2 a{
+            font-size: 1rem;
+        }
     }
 
     .contenedor-grid-runas{
@@ -413,8 +465,6 @@ header{
 
 }
 
-
-
 footer{
     background-color: #153448;
     display: flex;
@@ -434,12 +484,4 @@ footer{
     width: 90rem;
 }
 
-/* links */
-a{
-    color: white;
-    font-size: 2rem;
-    font-family: "Poppins", sans-serif;
-    font-style: italic;
-    text-transform: capitalize;
-}
 
