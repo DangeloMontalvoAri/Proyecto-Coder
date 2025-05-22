@@ -63,9 +63,9 @@
 
         .grid-logo-1 {
             grid-area: logo1;
-            width: 200px;
+            width: 162px;
             height: auto;
-            place-items: center
+            margin: 11px 1em 0px 121px;
         }
 
         .grid-titulo-2 {
@@ -78,8 +78,9 @@
 
         .grid-logo-2 {
             grid-area: logo2;
-            width: 20rem;
+            width: 186px;
             height: auto;
+            margin: 18px 1em 0px 112px;
         }
 
 
@@ -114,9 +115,9 @@
         grid-template-rows: 30px 50px 90px;
 
         .grid-imagenR {
-            grid-area: imagenR;
-            width: 200px;
-            text-align: center;
+            width: 315px;
+            height: auto;
+            margin: 11px 5em 0 49px;
         }
 
         .grid-tituloR {
@@ -170,26 +171,30 @@
 
         .grid-imagenb-1 {
             grid-area: imagenb1;
-            width: 250px;
+            width: 226px;
             height: auto;
+            margin: 11px 5em 0 95px;
         }
 
         .grid-imagenb-2 {
             grid-area: imagenb2;
-            width: 148px;
+            width: 142px;
             height: auto;
+            margin: 11px 5em 0 10px;
         }
 
         .grid-imagenb-3 {
             grid-area: imagenb3;
-            width: 148px;
+            width: 142px;
             height: auto;
+            margin: 11px 5em 0 26px;
         }
 
         .grid-imagenb-4 {
             grid-area: imagenb4;
-            width: 200px;
+            width: 248px;
             height: auto;
+            margin: 11px 1em 0px -89px;
         }
 
         p {
@@ -221,7 +226,7 @@
 
         grid-template-columns: 100%;
 
-        grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+        grid-template-rows: 76px 87px 17px 17px 17px 17px 78px 108px 158px;
 
         .grid-tituloF-1 {
             grid-area: tituloF1;
@@ -287,7 +292,7 @@
 
         grid-template-columns: 45% 27% 27%;
 
-        grid-template-rows: 39px 100px 52px 179px 150px 150px 184px;
+        grid-template-rows: 36px 76px 55px 57px 131px 70px 184px;
 
         .grid-tituloFD-1 {
             grid-area: tituloFD1;
@@ -318,11 +323,15 @@
         }
 
         .grid-imgFD-1 {
-            grid-area: imgFD1;
+            width: 101px;
+            height: auto;
+            margin: 9px 1em 0 9px
         }
 
         .grid-imgFD-2 {
-            grid-area: imgFD2;
+            width: 101px;
+            height: auto;
+            margin: 9px 1em 0 9px
         }
 
         p {
@@ -366,16 +375,16 @@
         }
     }
 
-        footer {
+    footer {
         flex-direction: column;
         height: 120px;
     }
 
     .grid-logo-1 {
         grid-area: logo1;
-        width: 200px;
+        width: 427px;
         height: auto;
-        margin: 19px 1em 0 -58px;
+        margin: 19px 1em 0 -19px;
     }
 
     .grid-logo-2 {

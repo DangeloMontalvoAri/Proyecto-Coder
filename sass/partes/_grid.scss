@@ -1,0 +1,247 @@
+/*grid*/
+
+/*HOME*/
+
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    ".       titulo1 ."
+    "texto1  texto1  texto1"
+    ".       logo1   ."
+    "titulo2 titulo2   titulo2"
+    "texto2  texto2  texto2"
+    ".       logo2   ."
+    ;
+    grid-template-columns: 25% 40% 25% ;
+
+    grid-template-rows: 75px 91px 266px 103px 158px 436px;
+}
+
+.grid-titulo-1{
+    grid-area: titulo1;
+}
+
+.grid-texto-1{
+    grid-area: texto1;
+}
+
+.grid-logo-1{
+    grid-area: logo1;
+    width: 450px;
+    height: auto;
+    margin: 1px 1em 0 46px;
+}
+
+.grid-logo-1{
+    grid-area: logo1;
+}
+
+.grid-titulo-2{
+    grid-area: titulo2;
+}
+
+.grid-texto-2{
+    grid-area: texto2;
+}
+
+.grid-logo-2{
+    grid-area: logo2;
+}
+
+
+/*Runas*/
+
+.contenedor-grid-runas{
+    display: grid;
+    grid-template-areas: 
+    ".        tituloR     ."
+    ".        contenidoR  ."
+    ".        contenidoR2 ."
+    ".        imagenR     imagenR";
+
+    grid-template-columns: 25% 40% 25% ;
+
+    grid-template-rows: 85px 113px 53px 332px;
+}
+
+.grid-tituloR{
+    grid-area: tituloR;
+}
+
+.grid-contenidoR{
+    grid-area: contenidoR;
+}
+
+.grid-imagenR{
+    grid-area: imagenR;
+    width: 500px;
+    text-align: center;
+}
+
+.grid-contenidoR2{
+    grid-area: contenidoR2;
+}
+
+
+.contenedor-grid-build{
+    display: grid;
+    grid-template-areas: 
+    ".   tituloB1   tituloB1   tituloB1   ."
+    ".   textob1    textob1    textob1    ."
+    ".   textob2    textob2    textob2    ."
+    ".   .          imagenb1   .          ."
+    ".   textob3    textob3    textob3    ."
+    ".   imagenb2   .          imagenb3   ."
+    ".   textob4    textob4    textob4    ."
+    ".   .          imagenb4   .          .";
+
+    grid-template-columns: 18% 18%  18%  18%  18%   ;
+
+    grid-template-rows: 150px 150px 170px 430px 110px 670px 150px 420px ;
+}
+
+.grid-tituloB-1{
+    grid-area: tituloB1 ;
+}
+
+.grid-textob-1{
+    grid-area: textob1;
+}
+
+.grid-textob-2{
+    grid-area: textob2;
+}
+
+.grid-textob-3{
+    grid-area: textob3;
+}
+
+.grid-textob-4{
+    grid-area: textob4;
+}
+
+.grid-imagenb-1{
+    grid-area: imagenb1;
+}
+
+.grid-imagenb-2{
+    grid-area: imagenb2;
+}
+
+.grid-imagenb-3{
+    grid-area: imagenb3;
+}
+
+.grid-imagenb-4{
+    grid-area: imagenb4;
+}
+
+
+.contenedor-grid-fase{
+    display: grid;
+    grid-template-areas: 
+    "tituloF1  tituloF1   tituloF1"
+    "textoF1   textoF1    ."
+    "textoF2   textoF2    ."
+    "textoF3   textoF3    ."
+    "textoF4   textoF4    ."
+    "textoF5   textoF5    ."
+    "textoF6   textoF6    textoF6"
+    "textoF7   textoF7    textoF7"
+    ".         imgF1      .";
+
+    grid-template-columns: 25% 40% 25% ;
+
+    grid-template-rows: 150px 150px 150px 150x 150px 150px 150px 150px 150px
+}
+
+.grid-tituloF-1{
+    grid-area: tituloF1;
+}
+
+.grid-textoF-1{
+    grid-area: textoF1;
+}
+
+.grid-textoF-2{
+    grid-area: textoF2;
+}
+
+.grid-textoF-3{
+    grid-area: textoF3;
+}
+
+.grid-textoF-4{
+    grid-area: textoF4;
+}
+
+.grid-textoF-5{
+    grid-area: textoF5;
+}
+
+.grid-textoF-6{
+    grid-area: textoF6;
+}
+
+.grid-textoF-7{
+    grid-area: textoF7;
+}
+
+.grid-imgF-1{
+    grid-area: imgF1;
+}
+
+
+.contenedor-grid-FD{
+    display: grid;
+    grid-template-areas: 
+    "tituloFD1  tituloFD1  tituloFD1"
+    "tituloFD2   tituloFD2  tituloFD2"
+    "textoFD1   textoFD1   textoFD1"
+    "imgFD1     textoFD2   textoFD2"
+    "imgFD1     textoFD3   textoFD3"
+    "imgFD2     textoFD4   textoFD4"
+    "imgFD2     textoFD5   textoFD5";
+
+    grid-template-columns: 28% 28% 28% ;
+
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px ;
+
+
+}
+
+.grid-tituloFD-1{
+    grid-area: tituloFD1;
+}
+
+.grid-tituloFD-2{
+    grid-area: tituloFD2;
+}
+
+.grid-textoFD-1{
+    grid-area: textoFD1;
+}
+
+.grid-textoFD-2{
+    grid-area: textoFD2;
+}
+
+.grid-textoFD-3{
+    grid-area: textoFD3;
+}
+
+.grid-textoFD-4{
+    grid-area: textoFD4;
+}
+
+.grid-textoFD-5{
+    grid-area: textoFD5;
+}
+
+.grid-imgFD-1{
+    grid-area: imgFD1;
+}
+
+.grid-imgFD-2{
+    grid-area: imgFD2;
+}
