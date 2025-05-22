@@ -1,0 +1,48 @@
+/* medidas de la pagina */
+header{
+    background-color: #153448;
+    flex-direction: row;
+    display: flex;
+
+    .barra-de-navegación{
+        display: flex;
+    }
+    /* Barra de navegación */
+ .barra-de-navegación {
+    button{
+     padding: 5px 10px;
+     border-radius: 0px;
+     cursor: pointer;
+     border: 0;
+     background-color: #153448;
+     color: #03AED2;
+     box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+     letter-spacing: 1.5px;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 2rem;
+     transition: all 0.5s ease;
+
+        .linkB {
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-style: italic;
+            font-size: 2rem;
+            text-decoration: none;
+            margin: 0.5em;
+            background-color: #151719;
+            padding: 16px 30px;
+            border-radius: 6px;
+            transition: .3s;
+        }
+
+    }
+    button:hover .linkB{
+        background: none;
+    }
+    button:active{
+        transform: scale(0.9);
+    }
+
+ }
+}

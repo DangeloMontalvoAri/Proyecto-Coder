@@ -1,6 +1,362 @@
 @charset "UTF-8";
-/* reset del css */
+/*importar las partess*/
+/* reset del cssd */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+footer {
+  background-color: #153448;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 160px;
+}
+
+/* medidas de la pagina */
+header {
+  background-color: #153448;
+  flex-direction: row;
+  display: flex;
+  /* Barra de navegación */
+}
+header .barra-de-navegación {
+  display: flex;
+}
+header .barra-de-navegación button {
+  padding: 5px 10px;
+  border-radius: 0px;
+  cursor: pointer;
+  border: 0;
+  background-color: #153448;
+  color: #03AED2;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  transition: all 0.5s ease;
+}
+header .barra-de-navegación button .linkB {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 0.5em;
+  background-color: #151719;
+  padding: 16px 30px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+header .barra-de-navegación button:hover .linkB {
+  background: none;
+}
+header .barra-de-navegación button:active {
+  transform: scale(0.9);
+}
+
+/*responsive Mobile*/
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+  }
+  header .barra-de-navegación {
+    padding: 2px 8px;
+    cursor: none;
+    letter-spacing: 1px;
+    border: 0;
+    text-decoration: none;
+    font-size: 4px;
+  }
+  header .barra-de-navegación button .linkB {
+    margin: -1.5em;
+    font-size: 1rem;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .grid-logo-1 {
+    width: 15rem;
+  }
+  .grid-logo-2 {
+    width: 15rem;
+  }
+  nav {
+    width: 100%;
+  }
+  .contenedor-grid {
+    display: grid;
+    grid-template-areas: "titulo1" "texto1" "logo1" "titulo2" "texto2" "logo2";
+    grid-template-columns: 99%;
+    grid-template-rows: 30px 50px 100px 50px 50px 130px;
+  }
+  .contenedor-grid .grid-titulo-1 {
+    grid-area: titulo1;
+  }
+  .contenedor-grid .grid-texto-1 {
+    grid-area: texto1;
+  }
+  .contenedor-grid .grid-logo-1 {
+    grid-area: logo1;
+    width: 200px;
+    height: auto;
+    place-items: center;
+  }
+  .contenedor-grid .grid-titulo-2 {
+    grid-area: titulo2;
+  }
+  .contenedor-grid .grid-texto-2 {
+    grid-area: texto2;
+  }
+  .contenedor-grid .grid-logo-2 {
+    grid-area: logo2;
+    width: 20rem;
+    height: auto;
+  }
+  .contenedor-grid p {
+    font-size: 1rem;
+  }
+  .contenedor-grid h1 {
+    font-size: 1.5rem;
+  }
+  .contenedor-grid h2 {
+    font-size: 1.5rem;
+  }
+  .contenedor-grid .grid-texto-2 a {
+    font-size: 1rem;
+  }
+  .contenedor-grid-runas {
+    display: grid;
+    grid-template-areas: "tituloR" "contenidoR" "contenidoR2" "imagenR";
+    grid-template-columns: 100%;
+    grid-template-rows: 30px 50px 90px;
+  }
+  .contenedor-grid-runas .grid-imagenR {
+    grid-area: imagenR;
+    width: 200px;
+    text-align: center;
+  }
+  .contenedor-grid-runas .grid-tituloR {
+    font-size: 1rem;
+  }
+  .contenedor-grid-runas .grid-contenidoR {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 100px;
+  }
+  .contenedor-grid-build {
+    display: grid;
+    grid-template-areas: "tituloB1   tituloB1   tituloB1" "textob1    textob1    textob1" "textob2    textob2    textob2" "imagenb1   imagenb1   imagenb1" "textob3    textob3    textob3" "imagenb2   .          imagenb3" "textob4    textob4    textob4" ".          imagenb4   .      ";
+    grid-template-columns: 42% 15% 42%;
+    grid-template-rows: 35px 55px 56px 270px 43px 248px 34px 157px;
+  }
+  .contenedor-grid-build .grid-tituloB-1 {
+    grid-area: tituloB1;
+  }
+  .contenedor-grid-build .grid-textob-1 {
+    grid-area: textob1;
+  }
+  .contenedor-grid-build .grid-textob-2 {
+    grid-area: textob2;
+  }
+  .contenedor-grid-build .grid-textob-3 {
+    grid-area: textob3;
+  }
+  .contenedor-grid-build .grid-textob-4 {
+    grid-area: textob4;
+  }
+  .contenedor-grid-build .grid-imagenb-1 {
+    grid-area: imagenb1;
+    width: 250px;
+    height: auto;
+  }
+  .contenedor-grid-build .grid-imagenb-2 {
+    grid-area: imagenb2;
+    width: 148px;
+    height: auto;
+  }
+  .contenedor-grid-build .grid-imagenb-3 {
+    grid-area: imagenb3;
+    width: 148px;
+    height: auto;
+  }
+  .contenedor-grid-build .grid-imagenb-4 {
+    grid-area: imagenb4;
+    width: 200px;
+    height: auto;
+  }
+  .contenedor-grid-build p {
+    font-size: 1rem;
+  }
+  .contenedor-grid-build h1 {
+    font-size: 1.5rem;
+  }
+  .contenedor-grid-build h2 {
+    font-size: 1.5rem;
+  }
+  .contenedor-grid-fase {
+    display: grid;
+    grid-template-areas: "tituloF1" "textoF1" "textoF2" "textoF3" "textoF4" "textoF5" "textoF6" "textoF7" "imgF1";
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+  }
+  .contenedor-grid-fase .grid-tituloF-1 {
+    grid-area: tituloF1;
+  }
+  .contenedor-grid-fase .grid-textoF-1 {
+    grid-area: textoF1;
+  }
+  .contenedor-grid-fase .grid-textoF-2 {
+    grid-area: textoF2;
+  }
+  .contenedor-grid-fase .grid-textoF-3 {
+    grid-area: textoF3;
+  }
+  .contenedor-grid-fase .grid-textoF-4 {
+    grid-area: textoF4;
+  }
+  .contenedor-grid-fase .grid-textoF-5 {
+    grid-area: textoF5;
+  }
+  .contenedor-grid-fase .grid-textoF-6 {
+    grid-area: textoF6;
+  }
+  .contenedor-grid-fase .grid-textoF-7 {
+    grid-area: textoF7;
+  }
+  .contenedor-grid-fase .grid-imgF-1 {
+    grid-area: imgF1;
+    width: 200px;
+    height: auto;
+  }
+  .contenedor-grid-fase p {
+    font-size: 1rem;
+  }
+  .contenedor-grid-fase h1 {
+    font-size: 1.5rem;
+  }
+  .contenedor-grid-fase h2 {
+    font-size: 1.5rem;
+  }
+  .contenedor-grid-FD {
+    display: grid;
+    grid-template-areas: "tituloFD1  tituloFD1  tituloFD1" "tituloFD2   tituloFD2  tituloFD2" "textoFD1   textoFD1   textoFD1" "imgFD1     textoFD2   textoFD2" "imgFD1     textoFD3   textoFD3" "imgFD2     textoFD4   textoFD4" "imgFD2     textoFD5   textoFD5";
+    grid-template-columns: 45% 27% 27%;
+    grid-template-rows: 39px 100px 52px 179px 150px 150px 184px;
+  }
+  .contenedor-grid-FD .grid-tituloFD-1 {
+    grid-area: tituloFD1;
+  }
+  .contenedor-grid-FD .grid-tituloFD-2 {
+    grid-area: tituloFD2;
+  }
+  .contenedor-grid-FD .grid-textoFD-1 {
+    grid-area: textoFD1;
+  }
+  .contenedor-grid-FD .grid-textoFD-2 {
+    grid-area: textoFD2;
+  }
+  .contenedor-grid-FD .grid-textoFD-3 {
+    grid-area: textoFD3;
+  }
+  .contenedor-grid-FD .grid-textoFD-4 {
+    grid-area: textoFD4;
+  }
+  .contenedor-grid-FD .grid-textoFD-5 {
+    grid-area: textoFD5;
+  }
+  .contenedor-grid-FD .grid-imgFD-1 {
+    grid-area: imgFD1;
+  }
+  .contenedor-grid-FD .grid-imgFD-2 {
+    grid-area: imgFD2;
+  }
+  .contenedor-grid-FD p {
+    font-size: 1rem;
+  }
+  .contenedor-grid-FD h1 {
+    font-size: 1.5rem;
+  }
+  .contenedor-grid-FD h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1110px) {
+  header {
+    width: 100%;
+    height: 165px;
+    flex-direction: column;
+  }
+  header .barra-de-navegación {
+    padding: 2px 8px;
+    cursor: none;
+    letter-spacing: 1px;
+    border: 0;
+    text-decoration: none;
+    font-size: 4px;
+  }
+  header .barra-de-navegación button .linkB {
+    margin: -0.5em;
+    font-size: 2rem;
+  }
+  footer {
+    flex-direction: column;
+    height: 120px;
+  }
+  .grid-logo-1 {
+    grid-area: logo1;
+    width: 200px;
+    height: auto;
+    margin: 19px 1em 0 -58px;
+  }
+  .grid-logo-2 {
+    width: 525px;
+    height: auto;
+    margin: 19px 1em 0 -107px;
+  }
+  .grid-imagenb-1 {
+    width: 380px;
+    height: auto;
+    margin: 19px 1em 0 -118px;
+  }
+  .grid-imagenb-2 {
+    width: 322px;
+    height: auto;
+    place-items: center;
+    margin: 19px 1em 0 -118px;
+  }
+  .grid-imagenb-3 {
+    width: 322px;
+    height: auto;
+    margin: 19px 1em 0 -58px;
+  }
+  .grid-imagenb-4 {
+    width: 619px;
+    height: auto;
+    margin: 19px 1em 0 -240px;
+  }
+  .grid-imagenR {
+    width: 500px;
+    text-align: center;
+    margin: 19px 1em 0 -95px;
+  }
+  .grid-imgF-1 {
+    width: 619px;
+    height: auto;
+    margin: 19px 1em 0 -159px;
+  }
+  .grid-imgFD-1 {
+    width: 166px;
+    height: auto;
+    margin: 7px 1em 0 25px;
+  }
+  .grid-imgFD-2 {
+    width: 166px;
+    height: auto;
+    margin: 7px 1em 0 25px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -54,36 +410,6 @@ a {
   text-transform: capitalize;
 }
 
-/* Barra de navegación */
-.barra-de-navegación button {
-  border: 0;
-  background-image: linear-gradient(150deg, #153e48);
-  border-radius: 8px;
-  color: #fff;
-  display: flex;
-  padding: 4px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.barra-de-navegación button .linkB {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-style: italic;
-  font-size: 2rem;
-  text-decoration: none;
-  margin: 0.5em;
-  background-color: #151719;
-  padding: 16px 30px;
-  border-radius: 6px;
-  transition: 0.3s;
-}
-.barra-de-navegación button:hover .linkB {
-  background: none;
-}
-.barra-de-navegación button:active {
-  transform: scale(0.9);
-}
-
 /* logo */
 .logo {
   width: 100px;
@@ -99,14 +425,9 @@ a {
   height: 75px;
 }
 
-/* medidas de la pagina */
-header {
-  background-color: #153448;
-  flex-direction: row;
-  display: flex;
-}
-header .barra-de-navegación {
-  display: flex;
+/*escrituras de Inicio*/
+.grid-texto-2 a {
+  font-size: 2rem;
 }
 
 /*grid*/
@@ -115,10 +436,7 @@ header .barra-de-navegación {
   display: grid;
   grid-template-areas: ".       titulo1 ." "texto1  texto1  texto1" ".       logo1   ." "titulo2 titulo2   titulo2" "texto2  texto2  texto2" ".       logo2   .";
   grid-template-columns: 25% 40% 25%;
-  grid-template-rows: 150x 150px 150px 150px 150px 150px;
-}
-.contenedor-grid .grid-logo-1 {
-  width: 50rem;
+  grid-template-rows: 75px 91px 266px 103px 158px 436px;
 }
 
 .grid-titulo-1 {
@@ -131,6 +449,9 @@ header .barra-de-navegación {
 
 .grid-logo-1 {
   grid-area: logo1;
+  width: 450px;
+  height: auto;
+  margin: 1px 1em 0 46px;
 }
 
 .grid-logo-1 {
@@ -154,7 +475,7 @@ header .barra-de-navegación {
   display: grid;
   grid-template-areas: ".        tituloR     ." ".        contenidoR  ." ".        contenidoR2 ." ".        imagenR     imagenR";
   grid-template-columns: 25% 40% 25%;
-  grid-template-rows: 150x 150px 50px 150px;
+  grid-template-rows: 85px 113px 53px 332px;
 }
 
 .grid-tituloR {
@@ -179,7 +500,7 @@ header .barra-de-navegación {
   display: grid;
   grid-template-areas: ".   tituloB1   tituloB1   tituloB1   ." ".   textob1    textob1    textob1    ." ".   textob2    textob2    textob2    ." ".   .          imagenb1   .          ." ".   textob3    textob3    textob3    ." ".   imagenb2   .          imagenb3   ." ".   textob4    textob4    textob4    ." ".   .          imagenb4   .          .";
   grid-template-columns: 18% 18% 18% 18% 18%;
-  grid-template-rows: 150x 150px 150px 150x 150px 150px 150x 150px;
+  grid-template-rows: 150px 150px 170px 430px 110px 670px 150px 420px;
 }
 
 .grid-tituloB-1 {
@@ -222,7 +543,7 @@ header .barra-de-navegación {
   display: grid;
   grid-template-areas: "tituloF1  tituloF1   tituloF1" "textoF1   textoF1    ." "textoF2   textoF2    ." "textoF3   textoF3    ." "textoF4   textoF4    ." "textoF5   textoF5    ." "textoF6   textoF6    textoF6" "textoF7   textoF7    textoF7" ".         imgF1      .";
   grid-template-columns: 25% 40% 25%;
-  grid-template-rows: 150x 150px 150px 150x 150px 150px 150x 150px 150px;
+  grid-template-rows: 150px 150px 150px 150x 150px 150px 150px 150px 150px;
 }
 
 .grid-tituloF-1 {
@@ -265,7 +586,7 @@ header .barra-de-navegación {
   display: grid;
   grid-template-areas: "tituloFD1  tituloFD1  tituloFD1" "tituloFD2   tituloFD2  tituloFD2" "textoFD1   textoFD1   textoFD1" "imgFD1     textoFD2   textoFD2" "imgFD1     textoFD3   textoFD3" "imgFD2     textoFD4   textoFD4" "imgFD2     textoFD5   textoFD5";
   grid-template-columns: 28% 28% 28%;
-  grid-template-rows: 150px 150px 150px 150x 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
 }
 
 .grid-tituloFD-1 {
@@ -302,76 +623,6 @@ header .barra-de-navegación {
 
 .grid-imgFD-2 {
   grid-area: imgFD2;
-}
-
-/*responsive Mobile*/
-@media (max-width: 500px) {
-  header {
-    flex-direction: column;
-  }
-  header .barra-de-navegación {
-    width: 12rem;
-    justify-content: start;
-    flex-direction: row;
-  }
-  header .barra-de-navegación .linkB {
-    font-size: 1em;
-  }
-  footer {
-    flex-direction: column;
-  }
-  .grid-logo-1 {
-    width: 15rem;
-  }
-  .grid-logo-2 {
-    width: 15rem;
-  }
-  nav {
-    width: 100%;
-  }
-  .contenedor-grid {
-    grid-template-areas: "titulo1" "texto1" "logo1" "titulo2" "texto2" "logo2";
-    grid-template-columns: 100%;
-    grid-template-rows: 450x 450px 450px 450px 450px 50px;
-  }
-  .contenedor-grid .grid-logo-1 {
-    width: 20rem;
-  }
-  .contenedor-grid .grid-logo-2 {
-    width: 20rem;
-  }
-  .contenedor-grid p {
-    font-size: 1rem;
-  }
-  .contenedor-grid h1 {
-    font-size: 1.5rem;
-  }
-  .contenedor-grid h2 {
-    font-size: 1.5rem;
-  }
-  .contenedor-grid .grid-texto-2 a {
-    font-size: 1rem;
-  }
-  .contenedor-grid-runas {
-    grid-template-areas: "tituloR" "contenidoR" "contenidoR2" "imagenR";
-    grid-template-columns: 1fr;
-    grid-template-rows: 450x 450px 450px;
-  }
-  .grid-imagenR {
-    grid-area: imagenR;
-    width: 200px;
-    text-align: center;
-  }
-  .logo {
-    width: 100px;
-  }
-}
-footer {
-  background-color: #153448;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 160px;
 }
 
 /* imagenes */

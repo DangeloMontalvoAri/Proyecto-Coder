@@ -1,4 +1,10 @@
-/* reset del css */
+/*importar las partess*/
+
+@use "partes/footer";
+@use "partes/header";
+@use "partes/Mobile";
+
+/* reset del cssd */
 * {
     margin: 0;
     padding: 0;
@@ -58,41 +64,9 @@ a{
     text-transform: capitalize;
 }
 
-/* Barra de navegación */
-.barra-de-navegación {
-    button{
-        border: 0;
-        background-image: linear-gradient(150deg,
-        #153e48 );
-        border-radius: 8px;
-        color: #fff;
-        display: flex;
-        padding: 4px;
-        cursor: pointer;
-        transition: .3s;
 
-        .linkB {
-            color: white;
-            font-family: "Poppins", sans-serif;
-            font-style: italic;
-            font-size: 2rem;
-            text-decoration: none;
-            margin: 0.5em;
-            background-color: #151719;
-            padding: 16px 30px;
-            border-radius: 6px;
-            transition: .3s;
-        }
 
-    }
-    button:hover .linkB{
-        background: none;
-    }
-    button:active{
-        transform: scale(0.9);
-    }
 
-}
 
 /* logo */
 .logo {
@@ -112,14 +86,11 @@ a{
     }
 }
 
-/* medidas de la pagina */
-header{
-    background-color: #153448;
-    flex-direction: row;
-    display: flex;
 
-    .barra-de-navegación{
-        display: flex;
+/*escrituras de Inicio*/
+.grid-texto-2{
+    a{
+        font-size: 2rem;
     }
 }
 
@@ -139,11 +110,7 @@ header{
     ;
     grid-template-columns: 25% 40% 25% ;
 
-    grid-template-rows: 150x 150px 150px 150px 150px 150px;
-
-    .grid-logo-1{
-        width: 50rem;
-    }
+    grid-template-rows: 75px 91px 266px 103px 158px 436px;
 }
 
 .grid-titulo-1{
@@ -156,6 +123,9 @@ header{
 
 .grid-logo-1{
     grid-area: logo1;
+    width: 450px;
+    height: auto;
+    margin: 1px 1em 0 46px;
 }
 
 .grid-logo-1{
@@ -187,7 +157,7 @@ header{
 
     grid-template-columns: 25% 40% 25% ;
 
-    grid-template-rows: 150x 150px 50px 150px
+    grid-template-rows: 85px 113px 53px 332px;
 }
 
 .grid-tituloR{
@@ -223,7 +193,7 @@ header{
 
     grid-template-columns: 18% 18%  18%  18%  18%   ;
 
-    grid-template-rows: 150x 150px 150px 150x 150px 150px 150x 150px ;
+    grid-template-rows: 150px 150px 170px 430px 110px 670px 150px 420px ;
 }
 
 .grid-tituloB-1{
@@ -278,7 +248,7 @@ header{
 
     grid-template-columns: 25% 40% 25% ;
 
-    grid-template-rows: 150x 150px 150px 150x 150px 150px 150x 150px 150px
+    grid-template-rows: 150px 150px 150px 150x 150px 150px 150px 150px 150px
 }
 
 .grid-tituloF-1{
@@ -331,7 +301,7 @@ header{
 
     grid-template-columns: 28% 28% 28% ;
 
-    grid-template-rows: 150px 150px 150px 150x 150px 150px 150px ;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px ;
 
 
 }
@@ -372,106 +342,8 @@ header{
     grid-area: imgFD2;
 }
 
-/*responsive Mobile*/
-@media (max-width:500px){
-    header{
-        flex-direction: column;
-        .barra-de-navegación{
-         width: 12rem;
-         justify-content: start;
-         flex-direction: row;
-         .linkB{
-            font-size: 1em;
-         }
-        }
-    }
 
-    footer{
-        flex-direction: column;
-    }
 
-    .grid-logo-1{
-        width: 15rem;
-    ;
-    }
-
-    .grid-logo-2{
-        width: 15rem;
-    }
-
-    nav{
-        width: 100%;
-    }
-
-    .contenedor-grid{
-        grid-template-areas: 
-        "titulo1"
-        "texto1"
-        "logo1"
-        "titulo2"
-        "texto2"
-        "logo2";
-
-        grid-template-columns: 100% ;
-
-        grid-template-rows: 450x 450px 450px 450px 450px 50px;
-
-        .grid-logo-1{
-            width: 20rem;
-        }
-
-        .grid-logo-2{
-            width: 20rem;
-        }
-
-        p{
-            font-size: 1rem;
-        }
-    
-        h1{
-            font-size: 1.5rem;
-        }
-    
-        h2{
-            font-size: 1.5rem;
-        }
-    
-        .grid-texto-2 a{
-            font-size: 1rem;
-        }
-    }
-
-    .contenedor-grid-runas{
-        grid-template-areas: 
-        "tituloR"
-        "contenidoR"
-        "contenidoR2"
-        "imagenR";
-
-        grid-template-columns: 1fr ;
-
-        grid-template-rows: 450x 450px 450px ;
-    }
-
-    .grid-imagenR{
-        grid-area: imagenR;
-        width: 200px;
-        text-align: center;
-    }
-
-    .logo{
-        width: 100px;
-    }
-
-}
-
-footer{
-    background-color: #153448;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 160px;
-}
 
 /* imagenes */
 
@@ -483,5 +355,4 @@ footer{
 .runas img{
     width: 90rem;
 }
-
 
